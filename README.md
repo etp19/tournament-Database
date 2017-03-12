@@ -11,16 +11,16 @@ tournament. This  of game follow the Swiss-System tournament type in which playe
 * Download and Install virtual box.
 * Download and install vagrant 
 * Verify that virtual box is installed 
-* verify vagrant is installed by typing in the terminal (vagrant -v)
+* Verify vagrant is installed by typing in the terminal (vagrant -v)
 * Download or Clone my [Github Repository](https://github.com/etp19/tournament-Database.git). 
 * Navigate to the folder in which the files are located using the terminal
-* launch vagrant from the root folder using ```vagrant up``` (it will take a few minutes)
+* Launch vagrant from the root folder using ```vagrant up``` (it will take a few minutes)
 * Login into vagrant by typing ```vagrant ssh```
-* navigate to the vagrant folder once your are login and run the unit test named tournament
+* navigate to the vagrant folder once your are logged in and run the unit test named tournament
  _result.py
 * When finish using vagrant use  ```vagrant halt``` to shutdown the machine
 
-#### Result from tournament_test.py should look like this:
+#### Results from tournament_test.py should look like this:
 
 ```
 1. Old matches can be deleted.
