@@ -3,7 +3,7 @@
 
 ## Project: Tournament Database
 
-In this project I build a database backed software to run a particular kind of game or sporting 
+In this project I built a database backed software to run a particular kind of game or sporting 
 tournament. This  of game follow the Swiss-System tournament type in which player are not eliminated when they lose a match, but are paired in each round with opponents having approximately the same win-loss record. 
 
 ### Instructions to run the app. 
