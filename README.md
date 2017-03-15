@@ -17,7 +17,8 @@ tournament. This  of game follow the Swiss-System tournament type in which playe
 * Launch vagrant from the root folder using ```vagrant up``` (it will take a few minutes)
 * Login into vagrant by typing ```vagrant ssh```
 * Once you are logged in, navigate to the vagrant folder and follow the steps below:
-  * Navigate to the tournament folder.  
+  
+  * Navigate to the tournament folder.  
   * Type psql.   
   * Then Run ```\i tournament.sql``` script from the console, **this will import and execute the script**.  
   * Type ```\q``` to finish using PostgreSQL.  
