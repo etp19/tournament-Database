@@ -20,10 +20,9 @@ tournament. This  of game follow the Swiss-System tournament type in which playe
   * Navigate to the tournament folder
   * Type psql 
   * Then Run ```\i tournament.sql``` script from the console, **this will import and execute the script**.
-  * Type ```\q``` to finish using PostgreSQL
-  * Run the unit test named ```tournament
-   _result.py```
-* When finish using vagrant use  ```vagrant halt``` to shutdown the machine
+  * Type ```\q``` to finish using PostgreSQL.
+  * Run the unit test by typing ```python tournament_test.py```.
+* When finish using vagrant use ```vagrant halt``` to shutdown the machine
 
 #### Results from tournament_test.py should look like this:
 
