@@ -4,12 +4,14 @@
 --
 -- You can write comments in this file by starting them with two dashes, like
 -- these lines here.
---delete databases
+
+--delete database
 DROP DATABASE IF EXISTS tournament;
+
 --create databases
 CREATE DATABASE tournament;
 
-
+--connect to the database
 \c tournament;
 
 --create table for players
@@ -17,10 +19,10 @@ CREATE TABLE players (id SERIAL PRIMARY KEY,
                       name TEXT );
 
 --create table for matches
-CREATE TABLE matches (player_a INTEGER REFERENCES players(id),
-                      player_b INTEGER REFERENCES players(id),
-                      winner INTEGER REFERENCES players (id),
-                      PRIMARY KEY (player_a, player_b));
+CREATE TABLE matches (
+                      winner INTEGER REFERENCES players(id),
+                      loser INTEGER REFERENCES players(id),
+                      PRIMARY KEY (winner, loser));
 
 
 
@@ -34,7 +36,7 @@ GROUP BY players.id ORDER BY victories DESC;
 CREATE VIEW matchesRecords AS
 SELECT players.id, COUNT(matches.*) AS matches
 FROM players LEFT JOIN matches
-ON players.id = matches.player_a OR players.id = matches.player_b
+ON players.id = matches.winner OR players.id = matches.loser
 GROUP BY players.id ORDER BY matches DESC;
 
 --create a view that contains id, name, wins, matches getting the results from players, winRecords and matchesRecords.
