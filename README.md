@@ -17,12 +17,13 @@ tournament. This  of game follow the Swiss-System tournament type in which playe
 * Launch vagrant from the root folder using ```vagrant up``` (it will take a few minutes)
 * Login into vagrant by typing ```vagrant ssh```
 * Once you are logged in, navigate to the vagrant folder and follow the steps below:
-  * Navigate to the tournament folder
-  * Type psql 
-  * Then Run ```\i tournament.sql``` script from the console, **this will import and execute the script**.
-  * Type ```\q``` to finish using PostgreSQL.
-  * Run the unit test by typing ```python tournament_test.py```.
-* When finish using vagrant use ```vagrant halt``` to shutdown the machine
+  * Navigate to the tournament folder.  
+  * Type psql.   
+  * Then Run ```\i tournament.sql``` script from the console, **this will import and execute the script**.  
+  * Type ```\q``` to finish using PostgreSQL.  
+  * Run the unit test by typing ```python tournament_test.py```.
+  
+* When finish using vagrant use ```vagrant halt``` to shutdown the machine.
 
 #### Results from tournament_test.py should look like this:
 
